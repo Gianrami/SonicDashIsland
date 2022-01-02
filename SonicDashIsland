@@ -1,0 +1,47 @@
+print('''
+*******************************************************************************
+                      -     =    .--._
+                - - ~_=  =~_- = - `.  `-.
+              ==~_ = =_  ~ -   =  .-'    `.
+            --=~_ - ~  == - =   .'      _..:._
+           ---=~ _~  = =-  =   `.  .--.'      `.
+          --=_-=- ~= _ - =  -  _.'  `.      .--.:
+            -=_~ -- = =  ~-  .'      :     :    :
+             -=-_ ~=  = - _-`--.     :  .--:    D
+               -=~ _=  =  -~_=  `;  .'.:   ,`---'@
+             --=_= = ~-   -=   .'  .'  `._ `-.__.'
+            --== ~_ - =  =-  .'  .'     _.`---'
+           --=~_= = - = ~  .'--''   .   `-..__.--.
+          jgs--==~ _= - ~-=  =-~_-   `-..___(  ===;
+          --==~_==- =__ ~-=  - -    .'       `---'
+*******************************************************************************
+''')
+print("Welcome to Sonic Dash Island!")
+print("Your mission is to save your buddy Knuckles from Doctor Eggman.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+
+woods = input('You see two sets of tracks in the woods. Do you go "left" or "right"? \n')
+lwoods = woods.lower()
+
+
+if lwoods == "right":
+  print("Game over. You fell into a spike pit. \n")
+
+lava = input('You come to a lava pit. Do you "wait" for the track to move to you or try to "jump" across? \n')
+lowerlava = lava.lower()
+
+if lowerlava == "jump":
+  print("Game over. You couldn't jump far enough and fell into the lava. \n")
+
+path = input('Dr. Eggman has blocked your path with 3 doors. "Red", "Blue", and "Yellow". Which door do you go through? \n')
+lpath = path.lower()
+
+if lpath == "yellow":
+  print('You Win! You reached Dr. Eggman and saved Knuckles! \n')
+if lpath == "red":
+  print('Game Over. Dr. Eggman blew you up. \n')
+if lpath == "blue":
+  print('Game Over. You fell into a pool of sharks. \n')
