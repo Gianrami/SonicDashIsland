@@ -23,21 +23,19 @@ print("Your mission is to save your buddy Knuckles from Doctor Eggman.")
 woods = input('You see two sets of tracks in the woods. Do you go "left" or "right"? \n')
 lwoods = woods.lower()
 
-if lwoods == "right":
+if lwoods == "left":
+  lava = input('You come to a lava pit. Do you "wait" for the track to move to you or try to "jump" across? \n')
+  lowerlava = lava.lower()
+  if lowerlava == "wait":
+    path = input('Dr. Eggman has blocked your path with 3 doors. "Red", "Blue", and "Yellow". Which door do you go through? \n')
+    lpath = path.lower()
+    if lpath == "yellow":
+      print('You Win! You reached Dr. Eggman and saved Knuckles! \n')
+    if lpath == "red":
+      print('Game Over. Dr. Eggman blew you up. \n')
+    if lpath == "blue":
+      print('Game Over. You fell into a pool of sharks. \n')
+  else:
+    print("Game over. You couldn't jump far enough and fell into the lava. \n")
+else: 
   print("Game over. You fell into a spike pit. \n")
-
-lava = input('You come to a lava pit. Do you "wait" for the track to move to you or try to "jump" across? \n')
-lowerlava = lava.lower()
-
-if lowerlava == "jump":
-  print("Game over. You couldn't jump far enough and fell into the lava. \n")
-
-path = input('Dr. Eggman has blocked your path with 3 doors. "Red", "Blue", and "Yellow". Which door do you go through? \n')
-lpath = path.lower()
-
-if lpath == "yellow":
-  print('You Win! You reached Dr. Eggman and saved Knuckles! \n')
-if lpath == "red":
-  print('Game Over. Dr. Eggman blew you up. \n')
-if lpath == "blue":
-  print('Game Over. You fell into a pool of sharks. \n')
